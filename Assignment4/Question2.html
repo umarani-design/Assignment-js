@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <form>
+    Enter First Number:<input type="text" id="firstnum"/><br>
+    Enter Second Number:<input type="text" id="secondnum"/><br>
+    <input type="button" onclick="add()" value="Add"/>
+    <input type="text" id="result">
+    </form>
+    
+    <script>
+        function add()
+        {
+          var x=document.getElementById("firstnum").value;
+          var y=document.getElementById("secondnum").value;
+          var sum=parseInt(x) + parseInt(y);
+          document.getElementById("result").value=sum;
+        }
+    </script>
+</body>
+</html>

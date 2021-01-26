@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>    
+</head>
+<body>
+    <!-- Fetching elements by Tag -->
+    <div>
+        <p style="color:crimson;">JAVA PRACTICE SESSION</p>
+        <h1>Hello</h1>
+        <h1>haiiii</h1>
+        <h2>Welcome to practice session</h2>
+    </div>
+    <!-- Fetching elements by classname -->
+    <div>
+        <table border="1" cellspacing="0" cellpadding="10" style="color:darkgreen;">
+            <thead>
+                <tr>
+                    <th style="color:deeppink;">Name</th>
+                    <th style="color: deeppink;">Age</th>
+                    <th style="color: deeppink;">Group</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Raj</td>
+                    <td class="age">15</td>
+                    <td>science</td>
+                </tr>
+                <tr>
+                    <td>Nikhil</td>
+                    <td class="age">20</td>
+                    <td>Maths</td> 
+                </tr>
+                <tr>
+                    <td>Vivek</td>
+                    <td class="age">18</td>
+                    <td>Hindi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Fetching elements using id -->
+    <div>
+        <p id="para" style="color:indigo;"><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, voluptate.</b></p>
+    </div>
+    <script> 
+        var ele = document.getElementsByTagName("h1");
+        console.log(ele[0]);
+        console.log(ele[1].innerText);
+        var txt=document.getElementsByTagName("h2");
+        console.log(txt[0].innerText);
+        
+        var txt1=document.getElementsByClassName("age");
+        console.log(txt1[2].innerText);
+        console.log(txt1[0].innerText);
+        
+        var txt2=document.getElementById("para");
+        console.log(txt2);
+        console.log(txt2.innerText);
+        
+    </script>
+</body>
+</html>
